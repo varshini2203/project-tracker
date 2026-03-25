@@ -1,46 +1,128 @@
-# Getting Started with Create React App
+# 🚀 Project Tracker – Velotrack
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern **multi-view project management dashboard** built with React + TypeScript.  
+It supports **Kanban, List (virtualized), and Timeline views**, along with drag & drop, filtering, and live collaboration simulation.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🌐 Live Demo
+👉 https://project-tracker-s5sx.vercel.app/
 
-### `npm start`
+<img width="1914" height="945" alt="image" src="https://github.com/user-attachments/assets/345b5305-4155-4e11-820c-5bee424e651a" />
+<img width="1904" height="917" alt="image" src="https://github.com/user-attachments/assets/b509bd66-862d-4788-8b8b-aab7281eaeac" />
+<img width="1912" height="906" alt="image" src="https://github.com/user-attachments/assets/755fc7d3-51aa-4e43-b452-d6c4b74b2182" />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📌 Features
 
-### `npm run build`
+### 🗂️ Multi View System
+- Kanban Board (drag & drop tasks between columns)
+- List View (optimized with virtualization)
+- Timeline View (Gantt-style project tracking)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### ⚡ Task Management
+- Create new tasks
+- Update task status
+- Assign priority (Low, Medium, High, Critical)
+- Set due dates
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🔍 Smart Filtering
+- Filter by:
+  - Status
+  - Priority
+  - Assignee
+- Search tasks instantly
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🧑‍🤝‍🧑 Live Collaboration Simulation
+- Simulated active users
+- Real-time task movement updates
 
-### `npm run eject`
+### 🖱️ Drag & Drop System
+- Smooth pointer-based drag interactions
+- Visual drop target highlighting
+- Drag preview card
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 📊 Performance Optimized
+- Virtualized list rendering for large datasets
+- Memoized filtering and grouping
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🛠️ Tech Stack
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- React (TypeScript)
+- Zustand (State Management)
+- Tailwind CSS
+- Vite / CRA (based on setup)
+- Custom Drag & Drop logic
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📂 Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+src/
+│
+├── components/
+│ ├── TaskCard.tsx
+│ ├── TaskRow.tsx
+│ 
+├── store/
+│ ├── store.ts
+│
+├── App.tsx
+└── main.tsx
+
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+git clone https://github.com/your-username/project-tracker.git
+2. Install dependencies
+npm install
+3. Run locally
+npm run dev
+4. Build for production
+npm run build
+
+🌍 Deployment (Vercel)
+Push code to GitHub
+Import project in Vercel
+Set:
+Framework Preset: Vite / Create React App
+Build Command: npm run build
+Output Directory: dist / build
+
+
+⚠️ Known Issues
+Random task simulation may crash if task list is empty
+Timeline view depends on fixed date range (March 2026)
+Minor ESLint warnings may affect CI builds if enforced
+
+
+💡 Future Improvements
+Backend integration (Firebase / Supabase)
+Real-time WebSocket collaboration
+Task comments & attachments
+User authentication
+Dark mode
+Mobile responsiveness improvements
+
+
+👨‍💻 Author
+
+Built as a Frontend Engineering project to demonstrate:
+
+Advanced UI architecture
+State management
+Performance optimization
+Real-world dashboard design
+📜 License
+
+This project is for educational/demo purposes.
